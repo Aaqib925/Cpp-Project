@@ -1,0 +1,16 @@
+===================================================
+User: aaqib
+User Record ID: 10084
+Order Number: 1087
+
+Item		Price/Each		Total
+Electronic		15		15		
+Fast food		5		5		
+Grocery   		7		7		
+HouseHolds		20		20		
+
+Address: 23sagf
+Payment Method: Cash On Delivery!
+The local date and time: Wed Jul 15 22:08:05 2020
+
+
