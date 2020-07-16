@@ -107,7 +107,8 @@ public:
     {
         number += 1;
         cout << "Dear " << username << " , Please enter your Billing address: ";
-        cin >> this->address;
+        cin.ignore();
+        getline(cin, this->address);
         cout << endl;
         cout << "Thank You for the moment!!" << endl
              << "Your id is: " << number << endl;

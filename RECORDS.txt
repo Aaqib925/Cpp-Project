@@ -14,3 +14,51 @@ Payment Method: Cash On Delivery!
 The local date and time: Wed Jul 15 22:08:05 2020
 
 
+===================================================
+User: aaqib
+User Record ID: 10084
+Order Number: 1087
+
+Item		Price/Each		Total
+Electronic		15		15		
+Fast food		5		5		
+Grocery   		7		7		
+HouseHolds		20		20		
+
+Address: men
+Payment Method: Cash On Delivery!
+The local date and time: Thu Jul 16 22:05:29 2020
+
+
+===================================================
+User: aaqib
+User Record ID: 10084
+Order Number: 1087
+
+Item		Price/Each		Total
+Electronic		15		15		
+Fast food		5		5		
+Grocery   		7		7		
+HouseHolds		20		20		
+
+Address: 
+Payment Method: 
+The local date and time: Thu Jul 16 22:07:13 2020
+
+
+===================================================
+User: aaqib
+User Record ID: 10084
+Order Number: 1087
+
+Item		Price/Each		Total
+Electronic		15		15		
+Fast food		5		5		
+Grocery   		7		7		
+HouseHolds		20		20		
+
+Address: men nahi bataonga
+Payment Method: Cash On Delivery!
+The local date and time: Thu Jul 16 22:09:00 2020
+
+
