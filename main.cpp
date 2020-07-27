@@ -12,6 +12,7 @@ class User
 {
 protected:
     string username, password;
+    string formatedString;
 
 public:
     static int number;
@@ -21,7 +22,8 @@ public:
         cin >> username;
         cout << "Enter Password: ";
         cin >> password;
-        return username + password;
+        formatedString = "Username=" + username + " Password=" + password;
+        return formatedString;
     }
 
     void createAccount(string userData)

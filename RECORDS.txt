@@ -62,3 +62,35 @@ Payment Method: Cash On Delivery!
 The local date and time: Thu Jul 16 22:09:00 2020
 
 
+===================================================
+User: aaqib
+User Record ID: 10084
+Order Number: 1087
+
+Item		Price/Each		Total
+Electronic		15		15		
+Fast food		5		5		
+Grocery   		7		7		
+HouseHolds		20		20		
+
+Address: 2132
+Payment Method: Cash On Delivery!
+The local date and time: Mon Jul 27 16:48:57 2020
+
+
+===================================================
+User: Aaqib
+User Record ID: 10084
+Order Number: 1087
+
+Item		Price/Each		Total
+Electronic		15		15		
+Fast food		5		5		
+Grocery   		7		7		
+HouseHolds		20		20		
+
+Address: fafas
+Payment Method: Cash On Delivery!
+The local date and time: Mon Jul 27 16:50:46 2020
+
+
