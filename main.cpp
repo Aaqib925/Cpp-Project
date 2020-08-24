@@ -73,7 +73,6 @@ public:
     }
 };
 
-
 int User::number = rand() % 100 + 10000;
 
 class Customer : public User
@@ -98,23 +97,40 @@ public:
 
             else
             {
-                cout << "Your Account doesn't exist in out records, Please Create Account" << endl;
-                User::createAccount(User::getData());
-                ans = true;
+                cout << "Your Account doesn't exist in out records,\nDo you want to CREATE ACCOUNT? Y/N: ";
+                char select;
+                cin >> select;
+                if (select == 'y' || select == 'Y')
+                {
+                    User::createAccount(addedString);
+                }
+                else
+                {
+                    cout << "Thank for using our service!!" << endl;
+                    ans = false;
+                    break;
+                }
+                // ans = true;
             }
         }
     }
-
+    bool returnAuthorized()
+    {
+        return ans;
+    }
     void customerData()
     {
-        number += 1;
-        cout << "Dear " << username << " , Please enter your Billing address: ";
-        cin.ignore();
-        getline(cin, this->address);
-        cout << endl;
-        cout << "Thank You for the moment!!" << endl
-             << "Your id is: " << number << endl;
-        cout << endl;
+        if (ans == true)
+        {
+            number += 1;
+            cout << "Dear " << username << " , Please enter your Billing address: ";
+            cin.ignore();
+            getline(cin, this->address);
+            cout << endl;
+            cout << "Thank You for the moment!!" << endl
+                 << "Your id is: " << number << endl;
+            cout << endl;
+        }
     }
 };
 
@@ -261,9 +277,12 @@ public:
         char *dt = ctime(&now);
         Customer::working();
         Customer::customerData();
-        Payment::showItems(username);
-        Payment::showCosts();
-        Payment::agrii();
+        if (returnAuthorized())
+        {
+            Payment::showItems(username);
+            Payment::showCosts();
+            Payment::agrii();
+        }
         if (done)
         {
             cout << endl;
