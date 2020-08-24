@@ -22,7 +22,8 @@ public:
         cin >> username;
         cout << "Enter Password: ";
         cin >> password;
-        formatedString = "Username=" + username + " Password=" + password;
+        formatedString = "Username=" + username + "Password=" + password;
+        // cout << formatedString << endl;
         return formatedString;
     }
 
@@ -42,37 +43,66 @@ public:
 
     virtual bool checkData(string userData)
     {
+        //     int offset;
+        //     string line;
+        //     ifstream fin;
+        //     // cout << userData << endl;1
+        //     fin.open("Users.txt");
+        //     if (fin.is_open())
+        //     {
+
+        //         while (!fin.eof())
+        //         {
+
+        //             getline(fin, line);
+        //             if (offset = line.find(userData, 0) != string::npos)
+        //             {
+        //                 cout << "ACCOUNT FOUND" << endl;
+        //                 cout << endl;
+        //                 return true;
+        //             }
+        //             else
+        //             {
+        //                 cout << "ACCOUNT NOT FOUND" << endl;
+        //                 cout << endl;
+        //                 return false;
+        //             }
+        //         }
+        //     }
+
+        //     fin.close();
+        //     return false;
+
         int offset;
         string line;
-        ifstream fin;
+        ifstream Myfile;
+        Myfile.open("Users.txt");
 
-        fin.open("Users.txt");
-        if (fin.is_open())
+        if (Myfile.is_open())
         {
-
-            while (!fin.eof())
+            while (!Myfile.eof())
             {
-
-                getline(fin, line);
-                if (offset = line.find(userData, 0) != string::npos)
+                getline(Myfile, line);
+                if ((offset = line.find(userData, 0)) != string::npos)
                 {
                     cout << "ACCOUNT FOUND" << endl;
-                    cout << endl;
                     return true;
                 }
-                else
+                else if (Myfile.eof())
                 {
-                    cout << "ACCOUNT NOT FOUND" << endl;
-                    cout << endl;
-                    return false;
+
+                    cout << "ACCOUNT NOT FOUND, PLEASE CREATE ACCOUNT!!" << endl;
                 }
             }
+            Myfile.close();
         }
+        else
+            cout << "Unable to open this file." << endl;
 
-        fin.close();
         return false;
     }
 };
+
 
 int User::number = rand() % 100 + 10000;
 
