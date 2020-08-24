@@ -43,36 +43,6 @@ public:
 
     virtual bool checkData(string userData)
     {
-        //     int offset;
-        //     string line;
-        //     ifstream fin;
-        //     // cout << userData << endl;1
-        //     fin.open("Users.txt");
-        //     if (fin.is_open())
-        //     {
-
-        //         while (!fin.eof())
-        //         {
-
-        //             getline(fin, line);
-        //             if (offset = line.find(userData, 0) != string::npos)
-        //             {
-        //                 cout << "ACCOUNT FOUND" << endl;
-        //                 cout << endl;
-        //                 return true;
-        //             }
-        //             else
-        //             {
-        //                 cout << "ACCOUNT NOT FOUND" << endl;
-        //                 cout << endl;
-        //                 return false;
-        //             }
-        //         }
-        //     }
-
-        //     fin.close();
-        //     return false;
-
         int offset;
         string line;
         ifstream Myfile;
