@@ -29,20 +29,3 @@ Address: fsaf
 Payment Method: Cash On Delivery!
 The local date and time: Thu Aug 27 01:37:42 2020
 
-
-===================================================
-User: test
-User Record ID: 10084
-Order Number: 1087
-
-Item		Price/Each		Total
-Electronic		15		15		
-Fast food		5		5		
-Grocery   		7		7		
-HouseHolds		20		20		
-
-Address: sfaasf
-Payment Method: Cash On Delivery!
-The local date and time: Thu Aug 27 01:37:59 2020
-
-
