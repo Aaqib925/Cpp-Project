@@ -1,1 +1,1 @@
-UserName=0\0\32\16\2\Password=26\0\50\16\34\
+UserName=0\0\32\16\2\Password=0/0/32/16/2/

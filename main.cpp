@@ -35,12 +35,12 @@ string encrypt(string user, string pass)
             int y;
             y = letters.find(x);
             ps += to_string(y * 2);
-            ps += "\\";
+            ps += "/";
         }
         else
         {
             ps += to_string(x);
-            ps += "\\";
+            ps += "/";
         }
     }
     return us + ps;
