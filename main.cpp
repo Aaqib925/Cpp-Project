@@ -7,7 +7,46 @@
 #include <ctime>
 
 using namespace std;
+string encrypt(string, string);
 
+string encrypt(string user, string pass)
+{
+    string letters = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    string encryptString;
+    string us = "UserName=", ps = "Password=";
+    for (char x : user)
+    {   
+        if (isalpha(x))
+        {
+            int y;
+            y = letters.find(x);
+            us += to_string(y * 2);
+            us += "\\";
+        }
+        else
+        {
+            us += to_string(x);
+            us += "\\";
+        }
+    }
+    for (char x : pass)
+    {
+        if (isalpha(x))
+        {
+            int y;
+            y = letters.find(x);
+            ps += to_string(y * 2);
+            ps += "\\";
+        }
+        else
+        {
+            ps += to_string(x);
+            ps += "\\";
+        }
+    }
+    encryptString = us + ps;
+    return encryptString;
+}
 class User
 {
 protected:
