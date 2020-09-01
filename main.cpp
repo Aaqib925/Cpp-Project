@@ -12,7 +12,6 @@ string encrypt(string, string);
 string encrypt(string user, string pass)
 {
     string letters = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
-    string encryptString;
     string us = "UserName=", ps = "Password=";
     for (char x : user)
     {   
@@ -44,8 +43,7 @@ string encrypt(string user, string pass)
             ps += "\\";
         }
     }
-    encryptString = us + ps;
-    return encryptString;
+    return us + ps;
 }
 class User
 {
