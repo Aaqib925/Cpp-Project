@@ -61,7 +61,7 @@ public:
         cin >> username;
         cout << "Enter Password: ";
         cin >> password;
-        formatedString = "Username=" + username + "Password=" + password;
+        formatedString = encrypt(username, password);
         // cout << formatedString << endl;
         return formatedString;
     }
