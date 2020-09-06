@@ -8,7 +8,6 @@
 
 using namespace std;
 string encrypt(string, string);
-
 string encrypt(string user, string pass)
 {
     string letters = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
@@ -117,7 +116,6 @@ class Customer : public User
 protected:
     bool ans = false;
     string contactNumber, address;
-    ShoppingCart userShoppingCart;
 
 public:
     void working()
