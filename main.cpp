@@ -117,6 +117,7 @@ class Customer : public User
 protected:
     bool ans = false;
     string contactNumber, address;
+    ShoppingCart userShoppingCart;
 
 public:
     void working()
