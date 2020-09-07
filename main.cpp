@@ -96,7 +96,6 @@ public:
                 }
                 else if (Myfile.eof())
                 {
-
                     cout << "ACCOUNT NOT FOUND, PLEASE CREATE ACCOUNT!!" << endl;
                 }
             }

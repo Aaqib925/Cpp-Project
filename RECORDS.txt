@@ -125,3 +125,19 @@ Payment Method: Credit Card
 The local date and time: Sun Sep  6 15:55:49 2020
 
 
+===================================================
+User: test
+User Record ID: 10084
+Order Number: 1087
+
+Item		Price/Each		Total
+Electronic		15		15		
+Fast food		5		5		
+Grocery   		7		7		
+HouseHolds		20		40		
+
+Address: house no. 508
+Payment Method: Cash On Delivery!
+The local date and time: Mon Sep  7 11:55:43 2020
+
+
